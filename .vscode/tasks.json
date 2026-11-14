@@ -1,0 +1,35 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "web: build",
+			"type": "shell",
+			"command": "npm",
+			"args": [
+				"--prefix",
+				"apps/web",
+				"run",
+				"build"
+			],
+			"isBackground": false,
+			"problemMatcher": [],
+			"group": "build"
+		},
+		{
+			"label": "web: dev",
+			"type": "shell",
+			"command": "npm",
+			"args": [
+				"--prefix",
+				"apps/web",
+				"run",
+				"dev",
+				"--",
+				"--port",
+				"5173"
+			],
+			"isBackground": true,
+			"problemMatcher": []
+		}
+	]
+}
